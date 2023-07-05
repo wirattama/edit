@@ -4,16 +4,18 @@
 
 Pemisahan kata, juga dikenal sebagai segmensi kata, adalah proses membagi teks berbahasa alami menjadi kumpulan kata yang berbeda.Segmentasi kata, yang sering digunakan dalam Python, digunakan dalam pemrosesan teks dan pemodelan bahasa dengan tujuan menemukan batas kata dalam teks yang tidak memiliki pemurnian kata yang jelas. Misalnya, jika Anda memiliki teks dalam bahasa Tionghoa atau bahasa lain yang tidak menggunakan spasi sebagai pemisah kata, Anda harus menggunakan teknik segmentasi kata untuk membagi teks menjadi satuan kata yang berbeda. Segmensi kata seringkali merupakan tahap awal pemrosesan bahasa alami, atau natural language processing, sebelum melakukan analisis atau tugas lainnya pada teks.
 
-Sebagai contoh, proses segmentasi kata dapat mencakup berbagai langkah atau algoritma:
+Untuk melakukan word segmentation dalam Jupyter Notebook, ikuti langkah-langkah berikut:
 
-1. Tokenisasi: Ini adalah tahap pertama dalam segmentasi kata, di mana teks dibagi menjadi komponen dasar seperti kata, frasa, atau kalimat. Ini biasanya dilakukan dengan membagi teks berdasarkan spasi dalam banyak bahasa yang menggunakan spasi sebagai pemisah kata.
+1. Mempersiapkan lingkungan: Pastikan Anda telah menginstal pustaka NLP yang dibutuhkan di lingkungan Jupyter Notebook dapat dengan menggunakan conda atau pip untuk menginstal pustaka seperti NLTK, SpaCy, atau pustaka bahasa seperti PyThaiNLP.
 
-2. Menghilangkan tanda baca dan karakter khusus: Karena tanda baca dan karakter khusus tidak merupakan bagian dari kata itu sendiri, seringkali diperlukan untuk menghilangkan mereka sebelum melakukan segmentasi kata.
+2. Impor pustaka: Sebelum dapat menggunakan Jupyter Notebook, harus mengimpor pustaka yang diperlukan. Jika menggunakan NLTK, Anda dapat menggunakan perintah "import nltk" untuk melakukannya.
 
-3. Menentukan batas kata: Ini adalah bagian penting dari proses segmentasi kata. Dalam bahasa yang memiliki spasi, batas kata cukup jelas. Namun, dalam bahasa yang tidak memiliki spasi, seperti bahasa Tionghoa, batas kata harus ditentukan dengan cara yang berbeda.
+3. Inisialisasi pustaka: Beberapa pustaka sintaksis bahasa perlu diinisialisasi sebelum dapat digunakan. Misalnya, untuk menggunakan SpaCy, harus menggunakan perintah "nlp = spacy.load('en')" untuk bahasa Inggris atau "nlp = spacy.load('zh')" untuk bahasa Tionghoa.
 
-4. Penggunaan kamus atau statistik algoritma: Kamus atau statistik algoritma dapat membantu dalam menentukan batas kata untuk bahasa yang sulit dipecah. Sementara algoritma algoritma menggunakan model mesin pembelajaran untuk memprediksi batas kata berdasarkan pelatihan data, kamus dapat menyediakan daftar kata-kata yang valid.
+4. Baca dan persiapkan teks: untuk dapat membaca teks yang ingin disegmenkan ke dalam Jupyter Notebook. atau juga dapat menulis teks langsung ke dalam kode Python atau membacanya dari berkas teks atau sumber data lainnya.
 
-5. Evaluasi dan perbaikan: Untuk meningkatkan akurasi segmentasi, seringkali diperlukan perbaikan dan evaluasi berulang. Performa segmentasi dapat dinilai dengan metrik evaluasi seperti recall dan presisi.
+5. Membagi kata: Gunakan fungsi atau metode yang disediakan oleh pustaka NLP yang digunakan untuk melakukan pembagian kata. Misalnya, jika menggunakan NLTK, dapat menggunakan fungsi "word_tokenize()" untuk memisahkan kata-kata dalam teks, dan jika menggunakan SpaCy, dapat menggunakan objek "nlp" yang telah diinisialisasi untuk memproses teks dan mendapatkan kata-kata khusus.
+
+6. Tampilkan hasil: Setelah melakukan segmentation kata, untuk menampilkan kata-kata yang telah dipisahkan ke dalam Jupyter Notebook dapat dengan menggunakan fungsi "print()" atau metode lain yang sesuai dengan tujuan.
 
 Aplikasi pemrosesan bahasa alami seperti penerjemahan mesin, analisis teks, klasifikasi teks, dan banyak lagi membutuhkan segmentasi kata yang baik untuk memproses dan memahami teks dengan lebih baik dan menghasilkan hasil analisis yang lebih relevan dan tepat.
